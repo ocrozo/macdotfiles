@@ -10,45 +10,23 @@ tap 'homebrew/python'
 tap 'caskroom/fonts'
 
 # Casks
-
-cask 'dropbox'
-cask '1Password'
-
-cask 'firefox'
-cask 'thunderbird'
-cask 'google-chrome'
-
-cask 'spotify'
-cask 'gpgtools'
-# Use the Mac App Store version until upgrading works
-# cask 'slack'
-cask 'skype'
-cask 'whatsapp'
-
-cask 'atom'
-cask 'visual-studio-code'
-cask 'macvim'
-cask 'java'
-cask 'docker'
-
-cask 'transmission'
-cask 'coconutbattery'
-cask 'disk-inventory-x'
-cask 'duet'
+# cask '1Password'
 cask 'appcleaner'
-cask 'the-unarchiver'
-cask 'caffeine'
-
+cask 'arduino'
+cask 'atom'
 cask 'audacity'
 cask 'beatport-pro'
-cask 'vlc'
+# cask 'caffeine'
+cask 'cheatsheet'
+# cask 'coconutbattery'
+cask 'disk-inventory-x'
 
-cask 'mactex'
-cask 'pandoc'
-cask 'skim'
-cask 'yed'
-cask 'openoffice'
+cask 'docker'
+cask 'dropbox'
+cask 'duet'
 
+cask 'firefox'
+cask 'flux'
 # Fonts
 
 cask 'font-inconsolata'
@@ -72,6 +50,40 @@ cask 'font-noto-sans'
 cask 'font-noto-emoji'
 cask 'font-noto-color-emoji'
 cask 'font-noto-serif'
+
+cask 'gimp'
+cask 'google-chrome'
+cask 'gpgtools'
+cask 'inkscape'
+cask 'jabref'
+cask 'java'
+cask 'keka'
+cask 'latexit'
+cask 'libreoffice'
+cask 'lighttable'
+# cask 'macvim'
+cask 'mactex'
+
+cask 'pandoc'
+
+# Use the Mac App Store version until upgrading works
+# cask 'slack'
+cask 'skim'
+cask 'skype'
+cask 'spotify'
+cask 'texstudio'
+cask 'the-unarchiver'
+cask 'thunderbird'
+cask 'transmission'
+cask 'vectr'
+cask 'vlc'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'visual-studio-code'
+cask 'whatsapp'
+cask 'yed'
+
+
 
 # Brews
 
@@ -134,3 +146,5 @@ brew 'matplotlib'
 
 brew 'docbook'
 brew 'docbook-xsl'
+
+brew 'tree'

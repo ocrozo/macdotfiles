@@ -3,6 +3,7 @@ set nocompatible
 set nobackup
 
 """ Pathogen
+filetype on
 filetype off
 call pathogen#infect()
 syntax on
@@ -17,7 +18,7 @@ set expandtab
 set smarttab
 
 """ Spelling
-set spell
+set nospell
 
 """ Menu
 set wildmenu
