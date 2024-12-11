@@ -1,6 +1,6 @@
 [user]
-	name = Julien Ponge
-	email = julien.ponge@insa-lyon.fr
+	name = Oscar Carrillo
+	email = oscar.carrillo@cpe.fr
 
 [color]
 	ui = true
@@ -11,5 +11,7 @@
 [rerere]
 	enabled = true
 
-[credential]
-	helper = osxkeychain
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
