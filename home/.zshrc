@@ -2,15 +2,17 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/oscar/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-ZSH_THEME="agnoster"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="agnoster"
+# disable oh-my-zsh themes for pure prompt
+ZSH_THEME=""
 # Cool themes: robbyrussell, agnoster, juanghurtado
 
 # Set list of themes to pick from when loading at random
@@ -79,6 +81,25 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# zplug configuration
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "mafredri/zsh-async", from:github, use:"async.zsh"
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "zsh-users/zsh-syntax-highlighting", as:plugin, defer:2
+zplug "zsh-users/zsh-autosuggestions", as:plugin, defer:2
+zplug 'zsh-users/zsh-completions', depth:1 # more completions
+
+zplug load
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
 
 # User configuration
 
