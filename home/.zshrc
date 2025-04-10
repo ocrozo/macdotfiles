@@ -103,7 +103,7 @@ fi
 
 # User configuration
 
-for envfile in ~/dotfiles/env/*.sh; do
+for envfile in $HOME/dotfiles/env/*.sh; do
   source ${envfile}
 done
 
